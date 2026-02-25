@@ -1,20 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-import { Route, Router } from 'react-router-dom';
+
+
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Reg from "./Reg";
+import Home from "./Home";
 
 function App() {
   return (
     <>
-      <h1>iam App</h1>
+      <h1>This is App</h1>
       <BrowserRouter>
         <Routes>
-             <Route path="/reg" element={<Reg/>}/>
-             <Route path="/h" element={<Home/>}/>
+          <Route path="/reg" element={<Reg />} />
+          <Route path="/h" element={<Home/>} />
         </Routes>
-        </BrowserRouter>
-        </>
-  )
-    
+      </BrowserRouter>
+    </>
+  );
 }
-
-export default App
+export default App;
