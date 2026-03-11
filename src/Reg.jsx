@@ -14,7 +14,8 @@ function Reg() {
     try {
      // const res = await axios.post("http://localhost:8000/reg", data);
      // alert(res.data);
-      "https://CabSystems-2.onrender.com/register";
+      const res = await axios.post("https://CabSystems-2.onrender.com/register",data)
+      alert(res.data);
     } catch (xyz) {
       alert(xyz.response.data);
     }
